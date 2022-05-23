@@ -85,29 +85,3 @@ linkedQueueType::~linkedQueueType()
 {
 	initializeQueue();
 }
-
-/*
-const linkedQueueType& linkedQueueType::operator=(const linkedQueueType& otherQueue)
-{
-	if (this != &otherQueue) //avoid self-copy
-	{
-		if (otherQueue.queueFront == NULL)
-		{
-			queueFront = NULL;
-			queueRear = NULL;
-		}
-
-		else
-		{
-			queueFront = CopyList(otherQueue.queueFront);
-			queueRear = queueFront;
-			while (queueRear->next != NULL)
-			{
-				queueRear = queueRear->next;
-			}
-		}
-	}
-
-	return *this;
-}
-*/
